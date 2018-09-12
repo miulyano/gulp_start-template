@@ -18,31 +18,31 @@ _assets - скомпилированные исходники
 
 _source - исходники
 |--css - стили в scss
-|--block - блоки стилей
-|--base
-|--html
-|--form
-|--и т.д.
-
-img - изображения
-|--style
-|--content
-|--и т.д.
-
-svg - изображения
-|--style
-|--content
-|--и т.д.
-
-font - шрифты
-|--roboto
-|--iconfont
-|--и т.д.
-
-js - javascript файлы
-|--form
-|--plugin
-|--и т.д.
-
-module - дополнительные модули и jQuery-плагины
+|--|--block - блоки стилей
+|--|--base
+|--|--html
+|--|--form
+|--|--и т.д.
+|--img - изображения
+|--|--style
+|--|--content
+|--|--и т.д.
+|--svg - изображения
+|--|--style
+|--|--content
+|--|--и т.д.
+|--font - шрифты
+|--|--roboto
+|--|--iconfont
+|--|--и т.д.
+|--js - javascript файлы
+|--|--form
+|--|--plugin
+|--|--и т.д.
+|--pages - gug файлы
+|--|--form
+|--|--plugin
+|--|--и т.д.
+|--module - дополнительные модули и jQuery-плагины
+index.pug - точка входа для pug; компилируется в index.html
 ```
