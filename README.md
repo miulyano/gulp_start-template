@@ -3,7 +3,9 @@
 ### Клонирование и установка зависимостей
 
      git clone https://github.com/morecodemore/gulp_start-template.git
+     
      cd gulp_start-template
+     
      npm i
 
 ### Команда запуска
