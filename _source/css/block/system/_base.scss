@@ -1,0 +1,111 @@
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: padding-box;
+  font-family: $-default-font;
+  color: $-black--color;
+}
+
+*::selection {  
+  color: $-white--color;
+  background-color: $-active--color;
+}
+
+*:invalid {
+  box-shadow: none;
+  outline: none;
+}
+
+a:focus,
+input:focus,
+button:focus,
+textarea:focus,
+input[type="file"]:focus + label .upload-button,
+input[type="checkbox"]:focus + label:before {
+  box-shadow: 0 0 5px $-active--color;
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.main__block {
+  overflow-x: hidden;
+}
+
+ul, li {
+  padding: 0;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+h1 {
+  color: #929292;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.block-container,
+.menu__list {
+  margin: 0 auto;
+  @include  make-container-max-widths();
+  @include media-breakpoint-down(xs) {
+    padding: 0 15px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  &-wrapper {
+    margin-top: 25px;
+    .breadcrumbs {
+      margin-bottom: 0;
+    }
+  }
+  &__item {
+    font-size: $-default--font_size;
+    svg {
+      display: inline-block;
+      margin-left: 2px;
+      margin-right: 5px;
+      width: 5px;
+      height: 9px;
+    }
+    a {
+      color: $-black--color;
+      transition: color .2s ease-in-out;
+    }
+    a:hover {
+      color: $-active--color;
+      text-decoration: none;
+    }
+    span {
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        background-color: $-black--color;
+      }
+    }
+  }
+}
+
+.bold-text {
+  font-weight: 700;
+}

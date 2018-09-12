@@ -1,0 +1,15 @@
+doctype html
+html(lang='ru')
+  head
+    include pages/components/head/head
+    title Gulp Template
+  body.body
+    header.header-index
+      include pages/components/header/header-index.pug
+    main.main__block.container
+      h1 Main page
+      img(src="img/index/content/header-image.jpg")
+    footer
+      include pages/components/footer/footer-index.pug
+    script(src='module/jquery-3.3.1.min/index.js')
+    script(src='js/bundle.min.js')
