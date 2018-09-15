@@ -2,16 +2,16 @@
 
 ### Клонирование и установка зависимостей
 ```shell
-git clone https://github.com/morecodemore/gulp_start-template.git
+$ git clone https://github.com/morecodemore/gulp_start-template.git
 
-cd gulp_start-template
+$ cd gulp_start-template
 
-npm i
+$ npm i
 ```
 
 ### Команда запуска
 ```shell
-gulp
+$ gulp
 ```
 
 ### Структура проекта
